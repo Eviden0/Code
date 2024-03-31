@@ -2,7 +2,8 @@
 using namespace std;
 //对特定格式的数据进行输入时
 //可以利用scanf的判断进行输入
-
+//遇到求时间之间的差的时候统一为s来做
+//再统一回去
 int solve(){
     int h1,m1,s1,h2,m2,s2,day=0;
     scanf("%d:%d:%d %d:%d:%d",&h1,&m1,&s1,&h2,&m2,&s2);
