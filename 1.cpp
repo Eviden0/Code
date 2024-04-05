@@ -2,17 +2,17 @@
 
 #include<string>
 using namespace std;
-int IsHeli(int n){
-    int sum=0,tn=n;
-    while(tn){
-        sum+=tn%10;
-        tn/=10;
-    }
-    if(n%sum==0)return sum;
-    else return 0;
-}
+
 int main(){
-    for(int n=1000000000;n>=1;n--){
-        if(IsHeli(n))cout<<n<<' ';
-    }
+        int zom[26]={0};
+        /* code */
+        int k;cin>>k;
+        while (1)
+        {
+            char a=getchar();
+            if(a=='\n')break;
+            zom[a-'a']++;
+            /* code */
+        }
+        for(int i=0;i<26;i++)cout<<zom[i]<<' ';
 }

@@ -1,0 +1,1 @@
+{"name":"Local: set","url":"/usr/Code/蓝桥杯/set.cpp","tests":[{"id":1712308412297,"input":"3 3\n*??\n???\n?*?","output":"*10\n221\n1*1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/usr/Code/蓝桥杯/set.cpp","group":"local","local":true}

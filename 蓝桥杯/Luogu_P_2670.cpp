@@ -1,6 +1,7 @@
 #include<iostream>
 
 using namespace std;
+//防数组越界哦!
 char tar[110][110];
 int main(){
 int m,n;cin>>n>>m;
