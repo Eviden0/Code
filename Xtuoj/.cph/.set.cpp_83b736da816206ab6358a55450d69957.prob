@@ -1,0 +1,1 @@
+{"name":"Local: set","url":"/usr/Code/Xtuoj/set.cpp","tests":[{"id":1711985948810,"input":"3\n1 3 5\n1 2 4\n2 4 5","output":"5\n1\n1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/usr/Code/Xtuoj/set.cpp","group":"local","local":true}

@@ -1,0 +1,20 @@
+15 PAPER PAPER ROCK ROCK --10 Alice
+10 PAPER ROCK ROCK PAPER --10 Bob
+5  ROCK ROCK ROCK PAPER --5   Bob
+10 PAPER ROCK ROCK ROCK --5   Bob
+10 ROCK ROCK ROCK PAPER --5   Alice
+15 ROCK ROCK PAPER PAPER --10 Bob
+10 PAPER PAPER ROCK ROCK --10 Alice
+
+--------------------------------------------
+Alice start game 1
+Change to Bob
+Bob win game 1
+Bob start game 2
+Bob win game 2
+Bob start game 3
+Change to Alice
+Change to Bob
+Change to Alice
+Alice win game 3
+Game over 1:2
