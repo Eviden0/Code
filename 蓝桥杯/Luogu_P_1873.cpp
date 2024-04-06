@@ -18,7 +18,7 @@ long long sum_tree(int n[],int size,int x){
 求最终的高度
 满足 sum(树-高度)==m
 400000 log2 400000 =18
-找到最大的满足每颗树砍的高度 即返回r
+找到最大的满足每颗树砍的高度 即返回l
 */
 int main(){
     long long n,m;cin>>n>>m;
