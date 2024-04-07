@@ -20,15 +20,6 @@ void dfs(int index,int sum){
         dfs(index+1,sum+i);
         arr[index]=0;
     }
-    
-    //这里的搜每个位置都有3种选择,各自之间相互独立
-    // for(int i=index;i<=3;i++){
-    //     arr[index]=num[i];
-    //     dfs(index+1,i+1);
-    //     arr[index]=0;
-    // }
-
-
 }
 int main(){
 cin>>n;
