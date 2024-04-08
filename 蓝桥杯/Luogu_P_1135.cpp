@@ -11,16 +11,15 @@ void dfs(int x,int sum){
     if(sum>=cnt)return;
     if(x==b){
         cnt=sum;
-        // sum=0;
         return;
     }
     arr[x]=sum;
     //上
     dfs(x+num[x],sum+1);
-        // sum--;
+
     //下
     dfs(x-num[x],sum+1);
-        // sum--;
+
 }
 int main(){
 cin>>n>>a>>b;
