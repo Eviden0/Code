@@ -1,0 +1,34 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int n,a,b,cnt=1e8;
+int num[210];
+int arr[210];
+void dfs(int x,int sum){
+    if(x>n||x<1) return;
+    /*这一布判断此时到达x时的次数是否大于之前走过的,很关键!*/
+    if(sum>=arr[x])return;
+    if(sum>=cnt)return;
+    if(x==b){
+        cnt=sum;
+        // sum=0;
+        return;
+    }
+    arr[x]=sum;
+    //上
+    dfs(x+num[x],sum+1);
+        // sum--;
+    //下
+    dfs(x-num[x],sum+1);
+        // sum--;
+}
+int main(){
+cin>>n>>a>>b;
+for(int i=1;i<=n;i++){cin>>num[i];arr[i]=1e8;}
+//当前是在a,要上到b,输出最短方案次数,没有则输出-1
+dfs(a,0);
+if(cnt!=1e8)
+cout<<cnt;
+//注意搜不到答案的情况!!!
+else cout<<-1;
+}
