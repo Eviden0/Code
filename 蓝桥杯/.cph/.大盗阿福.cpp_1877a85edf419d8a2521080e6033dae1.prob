@@ -1,0 +1,1 @@
+{"name":"Local: 大盗阿福","url":"/usr/Code/蓝桥杯/大盗阿福.cpp","tests":[{"id":1712629343494,"input":"4\n10 7 6 14","output":"24"},{"id":1712631168174,"input":"1\n99","output":"99"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/usr/Code/蓝桥杯/大盗阿福.cpp","group":"local","local":true}
