@@ -5,6 +5,8 @@ int res;
 int v[1010],w[1010];
 int sumW=0;
 int mem[1010][1010];
+int f[1010][1010];
+
 //传参过多,无法剪枝
 //超时做法!
 void dfs1(int x,int nowV,int sum){
@@ -33,6 +35,16 @@ int dfs(int x,int spV){
 int main(){
 cin>>n>>tarv;
 for(int i=1;i<=n;i++)cin>>v[i]>>w[i];
-cout<<dfs(1,tarv);
+//实现递推写法
+//倒着的"递归搜索树"
+
+for(int i=n;i>=1;i--){
+    for(int j=0;j<=tarv;j++){
+        if(j<v[i])f[i][j]=f[i+1][j];
+        else f[i][j]=max(f[i+1][j],f[i+1][j-v[i]]+w[i]);
+    }
+}
+cout<<f[1][tarv];
+// cout<<dfs(1,tarv);
 // cout<<sumW;
 }
