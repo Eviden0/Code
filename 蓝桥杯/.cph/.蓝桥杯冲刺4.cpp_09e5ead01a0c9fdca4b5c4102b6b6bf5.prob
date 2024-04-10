@@ -1,0 +1,1 @@
+{"name":"Local: 蓝桥杯冲刺4","url":"/usr/Code/蓝桥杯/蓝桥杯冲刺4.cpp","tests":[{"id":1712762318638,"input":"4\n4 3 2 1","output":"YES"},{"id":1712767795032,"input":"4\n1 2 4 3","output":"NO"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/usr/Code/蓝桥杯/蓝桥杯冲刺4.cpp","group":"local","local":true}
