@@ -15,7 +15,7 @@ for(int i=1;i<=n;i++){
 }
 for(int i=1;i<=n;i++){
     if(vis[sign[i]])continue;
-for(int j=maxm;j>=0;j--){
+for(int j=0;j<=maxm;j++){
     int r1=dp[i-1][j],r2=dp[i-1][j-m[i]]+w[i];
     if(m[i]>j) dp[i][j]=r1;
     else {
@@ -28,15 +28,15 @@ for(int j=maxm;j>=0;j--){
     }
 }
 }
-// cout<<dp[1][maxm]<<endl;
-int maxre=-1;
-for(int i=1;i<=n;i++){
-    for(int j=1;j<=maxm;j++){
-        // cout<<dp[i][j]<<' ';
-        maxre=max(dp[i][j],maxre);
-    }
-}
-cout<<maxre;
+cout<<dp[1][maxm]<<endl;
+// int maxre=-1;
+// for(int i=1;i<=n;i++){
+//     for(int j=1;j<=maxm;j++){
+//         // cout<<dp[i][j]<<' ';
+//         maxre=max(dp[i][j],maxre);
+//     }
+// }
+// cout<<maxre;
 }
 
 
