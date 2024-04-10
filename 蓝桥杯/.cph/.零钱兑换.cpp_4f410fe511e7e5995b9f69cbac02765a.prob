@@ -1,0 +1,1 @@
+{"name":"Local: 零钱兑换","url":"/usr/Code/蓝桥杯/零钱兑换.cpp","tests":[{"id":1712744492635,"input":"3 11\n1 2 5","output":"3"},{"id":1712747807967,"input":"3 11\n4 2 110","output":"1000000000"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/usr/Code/蓝桥杯/零钱兑换.cpp","group":"local","local":true}
