@@ -2,11 +2,13 @@
 输入一个数组,coins 表示不同面额的硬币,以及一个整数amount表示总金额
 计算并返回可以凑成的总金额所需的最小硬币个数,没有一种方案则返回-1
 */
+
 //完全背包问题
 #include<bits/stdc++.h>
 using namespace std;
 int amount,n,coins[1010];
 int mem[1010];
+int dp[1010];
 int dfs(int spa){
     if(spa==0)return 0;
     if(spa<0)return 1e9;
@@ -26,5 +28,16 @@ int dfs(int spa){
 int main(){
 cin>>n>>amount;
 for(int i=1;i<=n;i++)cin>>coins[i];
-cout<< dfs(amount);
+int re=dfs(amount);
+cout<< (re==1e9?-1:re);
+//优化成递推(dp?)
+memset(dp,0x3f,sizeof dp);
+dp[0]=0;
+for(int i=1;i<=amount;i++){
+    for(int j=1;j<=n;j++){
+        if(i>=coins[j])
+        dp[i]=min(dp[i],dp[i-coins[j]]+1);
+    }
+}
+cout<<'\n'<<(dp[amount]>=1e9?-1:dp[amount]);
 }
