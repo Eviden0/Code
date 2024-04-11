@@ -12,13 +12,18 @@ using namespace std;
    5表示二进制转换之后的数位最大是5位
    cout<<binary;
 */
+int m;
 int quick_power(int a,int b){
     int ans=1,base=a;
     while (b>0)
     {
         /* code */
-        if(b&1)ans*=base;
+        if(b&1){
+            ans*=base;
+            ans%=m;
+        }
         base*=base;
+        base%=m;
         b>>=1;
     }
     return ans;

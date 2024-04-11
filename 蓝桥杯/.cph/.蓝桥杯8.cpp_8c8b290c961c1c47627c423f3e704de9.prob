@@ -1,0 +1,1 @@
+{"name":"Local: 蓝桥杯8","url":"/usr/Code/蓝桥杯/蓝桥杯8.cpp","tests":[{"id":1712803364067,"input":"4 20\n8 6 4 2","output":"15"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/usr/Code/蓝桥杯/蓝桥杯8.cpp","group":"local","local":true}
