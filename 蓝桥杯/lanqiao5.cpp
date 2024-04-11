@@ -19,5 +19,6 @@ int main(){
         dp[j]=max(maxx,dp[j]);
         res=max(res,dp[j]);
     }
+    // for(int i=1;i<=n;i++)cout<<dp[i]<<' ';
     cout<<res;
 }
