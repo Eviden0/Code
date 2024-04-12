@@ -31,3 +31,19 @@ cout<<cnt;
 //注意搜不到答案的情况!!!
 else cout<<-1;
 }
+
+typedef long long ll;
+int n,a,b;
+int num[210],dis[210];
+//参数只是影响dfs(边界的)条件才加!
+void dfs2(int x,int cnt){
+
+    dis[x]=cnt;
+    int v=x-num[x];//能下多少层
+
+}
+int main(){
+    cin>>n>>a>>b;
+    for(int i=1;i<=n;i++)cin>>num[i];
+    dfslast(a,0);
+}

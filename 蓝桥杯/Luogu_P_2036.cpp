@@ -8,39 +8,54 @@
 #include<bits/stdc++.h>
 using namespace std;
 int n;
-int minn=INT32_MAX;
-
+int re=INT32_MAX;
 int vis[12];
 int s[12],b[12];
-void dfs(int x){
+//重写dfs
+void dfs(int x,int sji,int bhe){
     if(x>n){
-        bool not_null=false;
-        int sji=1,bhe=0;
-        for(int i=1;i<=n;i++){
-            if(vis[i]==1){
-                not_null=true;
-                sji*=s[i],bhe+=b[i];
-            }
-        }
-        if(not_null)
-        minn=min(minn,abs(sji-bhe));
-        return ;
+        if(!bhe)return;
+        re=min(re,abs(sji-bhe));
+        return;
     }
+    dfs(x+1,sji,bhe);
 
-    //选 1
-    vis[x]=1;
-    dfs(x+1);
-    vis[x]=0;
-    //不选 2
-    vis[x]=2;
-    dfs(x+1);
-    vis[x]=0;
-    //没考虑 0
+
+    dfs(x+1,sji*s[x],bhe+b[x]);
+    
 }
+
+// void dfs(int x){
+//     if(x>n){
+//         bool not_null=false;
+//         int sji=1,bhe=0;
+
+//         for(int i=1;i<=n;i++){
+//             if(vis[i]==1){
+//                 not_null=true;
+//                 sji*=s[i],bhe+=b[i];
+//             }
+//         }
+//         if(not_null)
+//         minn=min(minn,abs(sji-bhe));
+//         return ;
+//     }
+
+//     //选 1
+//     vis[x]=1;
+//     dfs(x+1);
+//     vis[x]=0;
+
+//     //不选 2
+//     vis[x]=2;
+//     dfs(x+1);
+//     vis[x]=0;
+//     //没考虑 0
+// }
 
 int main(){
     cin>>n;
     for(int i=1;i<=n;i++)cin>>s[i]>>b[i];
-    dfs(1);
-    cout<<minn;
+    dfs(1,1,0);//后面两个参数表示当前酸度,甜度
+    cout<<re;
 }
