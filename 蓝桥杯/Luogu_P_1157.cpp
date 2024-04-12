@@ -38,8 +38,22 @@ void dfs(int x,int start){
 //         // arr[i]=0;
 //     }
 // }
+int arr2[22],vis2[22];
+void dfs2(int x,int next){
+    if(x>r){
+        for(int i=1;i<=r;i++)cout<<setw(3)<<arr2[i];
+        cout<<endl;
+        return;
+    }
+    for(int i=next;i<=n;i++){
+        arr2[x]=i;
+        dfs2(x+1,i+1);
+        arr2[x]=0;
+    }
+}
 int main(){
     cin>>n>>r;
-    dfs(1,1);
+    // dfs(1,1);
+    dfs2(1,1);
     return 0;
 }

@@ -4,7 +4,7 @@ const int N=10;
 bool st[N];
 int arr[N];
 int n;
-void dfs(int x){
+void dfs1(int x){
     //搜到大于n位的就说明全部枚举完了
     if(x>n){
         for(int i=1;i<=n;i++){
@@ -17,13 +17,31 @@ void dfs(int x){
         if(!st[i]){
             st[i]=true;
             arr[x]=i;
-            dfs(x+1);//递归开搜
+            dfs1(x+1);//递归开搜
             st[i]=false;
             arr[x]=0;
         }
     }
 }
+int arr2[11];
+bool vis[11];
+void dfs2(int x){
+    if(x>n){
+        for(int i=1;i<=n;i++)printf("%5d",arr2[i]);
+        cout<<endl;
+    }
+    
+    for(int i=1;i<=n;i++){
+         if(vis[i])continue;
+        arr2[x]=i;
+       
+        vis[i]=true;
+        dfs2(x+1);
+        arr2[x]=0;
+        vis[i]=false;
+    }
+}
 int main(){
 cin>>n;
-dfs(1);
+dfs2(1);
 }
