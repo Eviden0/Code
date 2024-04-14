@@ -1,4 +1,7 @@
 #include<bits/stdc++.h>
+#include<algorithm>
+#include<cstring>
+#include<iostream>
 using namespace std;
 
 /*
@@ -29,9 +32,23 @@ int quick_power(int a,int b){
     return ans;
 }
 
-
+int qucik(int a,int b){
+    int ans=1,base=a;
+    while(b>0){
+        if(b&1){
+            ans*=base;
+            ans%=2;
+        }
+        base*=base;
+        base%=2;
+        b>>1;
+    }
+    return ans;
+}
 int main(){
-
+ios::sync_with_stdio(0);
+cin.tie(0);
+cout.tie(0);
 int a=2,b=11;
 cout<<quick_power(2,11);
 }

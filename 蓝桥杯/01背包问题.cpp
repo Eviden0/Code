@@ -33,6 +33,9 @@ int dfs(int x,int spV){
     return sumW;
 }
 int main(){
+ios::sync_with_stdio(0);
+cin.tie(0);
+cout.tie(0);
 cin>>n>>tarv;
 for(int i=1;i<=n;i++)cin>>v[i]>>w[i];
 //实现递推写法
