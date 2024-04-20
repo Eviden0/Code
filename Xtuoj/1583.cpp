@@ -1,8 +1,7 @@
 #include<iostream>
-#include<string.h>
 using namespace std;
+int num[10010];
 int n,m,k;
-
 int main(){
     int t;
     // cin>>t;
@@ -13,13 +12,8 @@ int main(){
         /* code */
         // cin>>n>>m>>k;
         scanf("%d %d %d",&n,&m,&k);
-        int num[10010]={0},vis[10010]={0};
-        // memset(num,0,10010);
-        // memset(vis,0,10010);
-        // for(int i=0;i<=10010;i++){
-        //     num[i]=0;
-        //     vis[i]=0;
-        // }
+        // int num[10010]={0},vis[10010]={0};
+        int vis[10010]={0};
         for(int i=1;i<=n;i++)scanf("%d",&num[i]);
         //滑动窗口!
         //右指针先走
