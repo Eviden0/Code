@@ -24,7 +24,6 @@ int main(){
     //4 1 3 2 4 1
     //4 5 8 10 14 15
     //5
-    // int mm=-1;
     int sumx=0,a;
 
     for(int i=1;i<=n;i++){
