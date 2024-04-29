@@ -2,7 +2,10 @@ module main
 
 go 1.22.2
 
-require github.com/gin-gonic/gin v1.9.1
+require (
+	github.com/gin-gonic/gin v1.9.1
+	github.com/sashabaranov/go-openai v1.23.0
+)
 
 require (
 	github.com/bytedance/sonic v1.9.1 // indirect
