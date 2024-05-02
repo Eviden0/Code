@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+Welcome to XTU OnlineJudge</title>
+<link rel='stylesheet' type='text/css' href='/exam/Web/Tpl/default/Public/Css/style_user.css' />
+<link rel="stylesheet" href="/markdown.css" type="text/css" />
+<link rel="stylesheet" href="/md_back.css" type="text/css" />
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+            processEscapes: true
+          },
+          TeX: {
+            equationNumbers: {
+              autoNumber: 'AMS'
+            }
+          },
+          "HTML-CSS": {
+            imageFont: null
+          }
+        });
+  </script>
+  <script type="text/javascript" src="/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</style>
+</head>
+<body>
+
+  <div id="header"> 
+    <div id="xtu_logo"><img src="/exam/Web/Tpl/default/Public/Images/xtu_logo.jpg" alt="XiangTan University" /></div>
+    <div id="xtu">XiangTan&nbsp;&nbsp;University<br />
+    OnlineJudge&nbsp;&nbsp;For&nbsp;&nbsp;Programming</div>
+    <div id="acm_logo"><img src="/exam/Web/Tpl/default/Public/Images/acm_small.jpg" alt="ACM/ICPC" /></div>
+  </div>
+  <div class="hr"></div>
+  <div id="menu">
+  	<div>
+    <table width="100%" border="0">
+      <tr class="menu_title">
+        <td><a href="/exam/index.php">Home Page</a></td>
+        <td><a href="/exam/index.php/problem">ALL Problems</a></td>
+        <td><a href="/exam/index.php/solution/submit">Submit Source Code</a></td>
+        <td><a href="/exam/index.php/solution/onlinestatus">Online Status</a></td>
+        <td><a href="/exam/index.php/news">F.A.Qs &amp; Help</a></td>
+      </tr>
+      <tr class="menu_title">
+        <td><a href="/exam/index.php/exam/current">Current Exams</a></td>
+        <td><a href="/exam/index.php/exam/past">Past Exams</a></td>
+        <td>Scheduled Exams</td>
+        <td><a href="/exam/index.php/user/ranklist">User Ranklist</a></td>
+        <td><a href="http://202.197.224.59/qa/" target="_blank"> Discusss </a></td>
+      </tr>     
+    </table>
+	</div>
+	<div class="hr"></div>
+    <div id="menu_left">
+		  
+	<table width="100%" border="0">
+	  <form action="" method="post" name="login">
+	  		<input name="crsf_token" type="hidden" id="crsf_token" value="b5c59ea5d271a4f838ad2ec43f2d6e92"/>
+        <tr>
+          <td>&nbsp;&nbsp;StudentID:</td>
+          <td><input name="username" type="text" id="username" tabindex="1" size="8" />
+          <input name="capture" type="hidden" id="capture" value="login" /></td>
+          <td>&nbsp;&nbsp;<a href="/exam/index.php/user/register">Create New Account </a></td>
+        </tr>
+        <tr>
+          <td>&nbsp;&nbsp;Password:</td>
+          <td><input name="password" type="password" id="password" tabindex="2" size="8" />
+          <input type="submit" name="Submit" value="Login" tabindex="3" /></td>
+          <td>&nbsp;&nbsp;<a href="/exam/index.php/user/remind">Forgot Your Password or Username</a></td>
+        </tr>
+	  </form>
+      </table>    </div>
+    <div id="menu_right">
+      <table width="100%" border="0">
+	  <form action="" method="post" name="gotoproblem">
+	  	<input name="crsf_token" type="hidden" id="crsf_token" value="7557cb00298641ac3a41167d235fcc6a"/>        <tr>
+          <td align="right">ProblemID:</td>
+          <td><input name="problem_id" type="text" id="problem_id" tabindex="11" size="8" />
+            <input type="submit" name="Submit2" value="Go Problem" tabindex="12" />
+            <input name="capture" type="hidden" id="capture" value="goproblem" /></td>
+        </tr>
+	  </form>
+	  <form action="" method="post" name="searchuser">
+	  	<input name="crsf_token" type="hidden" id="crsf_token" value="906d78adf7ee4c1b207d17a5b5938e0b"/>        <tr>
+          <td align="right">User Name:</td>
+          <td><input name="username" type="text" id="username" tabindex="21" size="8" />
+            <input type="submit" name="Submit3" value="SearchUser" tabindex="22" />
+            <input name="capture" type="hidden" id="capture" value="searchuser" /></td>
+        </tr>
+	  </form>
+      </table>
+    </div>
+  </div>
+  <div id="news">
+  	<MARQUEE scrollAmount=3 scrollDelay=150 behavior=alternate><p><font color="#0000ff"><strong>公告</strong></font>:&nbsp; <font style="background-color: rgb(255,255,255)" color="#000000"><font style="background-color: rgb(255,255,255)"><strong>支持Java，请使用Main类内含静态main方法</strong>。64位整数可以使用%I64d。</font></font></p>
+<p><font color="#339966"><strong>程序设计实践考试安排请询问教务干事老师，CSP成绩换算问题请询问王婷老师</strong></font></p>
+<p><strong><font color="#339966"><font color="#FF0000"><a href="/exam/index.php/solution/stat/cids/409,410,411,412,413,414,415,416,417,418,419,420,421,422,423,424,425,426,427,428,429,430">2023年C语言作业统计</a>  入队第一步，AK作业题，<a href="http://202.197.224.59/bm/">招新宣传点这 </a><a href="https://v.qq.com/x/page/v0812dpjirs.html">湘潭大学ACM/ICPC金牌团队</a></font></font></strong></p>
+<p>密码重置或新增账号，点<a href="https://www.wenjuan.com/s/QvQZfui/">这里</a>登记，管理员不定期操作</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong><font color="#339966"><font color="#FF0000"> </font></font></strong></p>
+<p>&nbsp;</p></MARQUEE>
+  </div>
+  <div class="hr"></div>
+<div id="content">
+  <div>
+  <table width="100%" border="0">
+  <tr align="center">
+    <td colspan="3"><h2>病毒</h2></td>
+  </tr>
+  <tr align="center">
+    <td colspan="3">[ <a href="/exam/index.php/solution/submit/id/1580/exam_id/465">Submit Code</a> ]
+    	[ <a href="/exam/index.php/solution/top20/pid/1580">Top 20 Runs</a> ]
+    	[ <a href="/exam/index.php/solution/onlinestatus/exam_id/465/problem_id/1580">Runs Status</a> ]
+    	</td>
+  </tr>
+  <tr align="center">
+    <td width="49%" align="right">Acceteped : 6 </td>
+    <td width="2%">&nbsp;</td>
+    <td width="49%" align="left"> Submit : 12 </td>
+  </tr>
+  <tr align="center">
+    <td align="right">Time Limit : 1000 MS</td>
+    <td>&nbsp;</td>
+    <td align="left">Memory Limit : 65536 KB</td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3"><h3>Description</h3></td>
+  </tr>
+  
+  <tr>
+    <td colspan="3"><div><article class="markdown-body"><h1 id="_1">病毒<a class="headerlink" href="#_1" title="Permanent link">#</a></h1>
+<h2 id="_2">题目描述<a class="headerlink" href="#_2" title="Permanent link">#</a></h2>
+<p>某国有<span class="arithmatex">\(n\)</span>个城市，城市与城市之间存在双向通路。突然，在其中的<span class="arithmatex">\(k\)</span>个城市爆发某种病毒引起的恶性流行疾病，并沿着通路向外传播。
+比如，城市<span class="arithmatex">\(u\)</span>一开始被感染，然后沿着与它相邻的城市<span class="arithmatex">\(v\)</span>还未被感染，它们存在一条通路，路长为<span class="arithmatex">\(w\)</span>，我们可以认为城市<span class="arithmatex">\(v\)</span>，至多在<span class="arithmatex">\(w\)</span>时刻后被感染。
+请计算一下所有城市被感染的最小时刻。</p>
+<h2 id="_3">输入格式<a class="headerlink" href="#_3" title="Permanent link">#</a></h2>
+<p>只有一组测试用例。</p>
+<p>第一行是三个整数<span class="arithmatex">\(n~(2 \le n \le 10000),~e~(1 \le m \le 30000),~k~(1 \le k \le n)\)</span>，分别表示城市数、通路数、最初被感染的城市数。
+以后的<span class="arithmatex">\(m\)</span>行，每行三个整数<span class="arithmatex">\(u,v~(1 \le u \neq v \le V),w~(1 \le w \le 10000)\)</span>，表示节点<span class="arithmatex">\(u\)</span>和<span class="arithmatex">\(v\)</span>之间存在一条长度为<span class="arithmatex">\(w\)</span>的通路。
+然后的一行包含<span class="arithmatex">\(k\)</span>个整数，表示最初被感染的城市编号。</p>
+<h2 id="_4">输出格式<a class="headerlink" href="#_4" title="Permanent link">#</a></h2>
+<p>输出一行，<span class="arithmatex">\(n\)</span>个整数，表示城市<span class="arithmatex">\(1\sim n\)</span>被感染的最小时间，整数之间用一个空格隔开，行尾无空格。</p>
+<h2 id="_5">样例输入<a class="headerlink" href="#_5" title="Permanent link">#</a></h2>
+<div class="highlight"><pre>4 4 2
+1 2 1
+2 3 2
+2 4 3
+3 4 2
+1 4
+</pre></div>
+
+<h2 id="_6">样例输出<a class="headerlink" href="#_6" title="Permanent link">#</a></h2>
+<div class="highlight"><pre>0 1 2 0
+</pre></div>
+
+<h2 id="_7">样例解释<a class="headerlink" href="#_7" title="Permanent link">#</a></h2>
+<p>样例如下图</p>
+<div class="highlight"><pre>一--1--二--2--三
+       |      |
+       3      |
+       |      |
+       四-----2      
+</pre></div></article></div></td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3"><h3>Sample Input </h3></td>
+  </tr>
+  
+  <tr>
+    <td colspan="3"><pre></pre></td>
+  </tr>
+  
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3"><h3>Sample Output </h3></td>
+  </tr>
+  
+  <tr>
+    <td colspan="3"><pre></pre></td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3"><h3>Source</h3></td>
+  </tr>
+  <tr>
+    <td colspan="3"></td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+		  <tr align="center">
+ 
+    <td colspan="3">[ <a href="/exam/index.php/solution/submit/id/1580/exam_id/465">Submit Code</a> ]
+    	[ <a href="/exam/index.php/solution/top20/pid/1580">Top 20 Runs</a> ]
+    	[ <a href="/exam/index.php/solution/onlinestatus/exam_id/465/problem_id/1580">Runs Status</a> ]
+    	</td>
+  </tr>
+</table>
+  </div>
+
+</div>
+  
+  <div class="hr"></div>
+  <div id="footer_menu">[ <a href="/exam/index.php">Home Page</a> ]&nbsp;&nbsp;[ <A HREF="javascript:self.location=document.referrer">Go Back</A> ]</div>
+  <div class="hr"></div>
+  <div id="footer">&copy;2008 XTU OnlineJudge Powered by XieBin, HuKun</div>
+</body>
+</html>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>

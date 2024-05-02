@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+Welcome to XTU OnlineJudge</title>
+<link rel='stylesheet' type='text/css' href='/exam/Web/Tpl/default/Public/Css/style_user.css' />
+<link rel="stylesheet" href="/markdown.css" type="text/css" />
+<link rel="stylesheet" href="/md_back.css" type="text/css" />
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+          tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+            displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+            processEscapes: true
+          },
+          TeX: {
+            equationNumbers: {
+              autoNumber: 'AMS'
+            }
+          },
+          "HTML-CSS": {
+            imageFont: null
+          }
+        });
+  </script>
+  <script type="text/javascript" src="/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</style>
+</head>
+<body>
+
+  <div id="header"> 
+    <div id="xtu_logo"><img src="/exam/Web/Tpl/default/Public/Images/xtu_logo.jpg" alt="XiangTan University" /></div>
+    <div id="xtu">XiangTan&nbsp;&nbsp;University<br />
+    OnlineJudge&nbsp;&nbsp;For&nbsp;&nbsp;Programming</div>
+    <div id="acm_logo"><img src="/exam/Web/Tpl/default/Public/Images/acm_small.jpg" alt="ACM/ICPC" /></div>
+  </div>
+  <div class="hr"></div>
+  <div id="menu">
+  	<div>
+    <table width="100%" border="0">
+      <tr class="menu_title">
+        <td><a href="/exam/index.php">Home Page</a></td>
+        <td><a href="/exam/index.php/problem">ALL Problems</a></td>
+        <td><a href="/exam/index.php/solution/submit">Submit Source Code</a></td>
+        <td><a href="/exam/index.php/solution/onlinestatus">Online Status</a></td>
+        <td><a href="/exam/index.php/news">F.A.Qs &amp; Help</a></td>
+      </tr>
+      <tr class="menu_title">
+        <td><a href="/exam/index.php/exam/current">Current Exams</a></td>
+        <td><a href="/exam/index.php/exam/past">Past Exams</a></td>
+        <td>Scheduled Exams</td>
+        <td><a href="/exam/index.php/user/ranklist">User Ranklist</a></td>
+        <td><a href="http://202.197.224.59/qa/" target="_blank"> Discusss </a></td>
+      </tr>     
+    </table>
+	</div>
+	<div class="hr"></div>
+    <div id="menu_left">
+		  
+	<table width="100%" border="0">
+	  <form action="" method="post" name="login">
+	  		<input name="crsf_token" type="hidden" id="crsf_token" value="b0a965c3c2c401dbd606af8051f0db2f"/>
+        <tr>
+          <td>&nbsp;&nbsp;StudentID:</td>
+          <td><input name="username" type="text" id="username" tabindex="1" size="8" />
+          <input name="capture" type="hidden" id="capture" value="login" /></td>
+          <td>&nbsp;&nbsp;<a href="/exam/index.php/user/register">Create New Account </a></td>
+        </tr>
+        <tr>
+          <td>&nbsp;&nbsp;Password:</td>
+          <td><input name="password" type="password" id="password" tabindex="2" size="8" />
+          <input type="submit" name="Submit" value="Login" tabindex="3" /></td>
+          <td>&nbsp;&nbsp;<a href="/exam/index.php/user/remind">Forgot Your Password or Username</a></td>
+        </tr>
+	  </form>
+      </table>    </div>
+    <div id="menu_right">
+      <table width="100%" border="0">
+	  <form action="" method="post" name="gotoproblem">
+	  	<input name="crsf_token" type="hidden" id="crsf_token" value="7095f0133d210bbc09e7fe4d62bf6093"/>        <tr>
+          <td align="right">ProblemID:</td>
+          <td><input name="problem_id" type="text" id="problem_id" tabindex="11" size="8" />
+            <input type="submit" name="Submit2" value="Go Problem" tabindex="12" />
+            <input name="capture" type="hidden" id="capture" value="goproblem" /></td>
+        </tr>
+	  </form>
+	  <form action="" method="post" name="searchuser">
+	  	<input name="crsf_token" type="hidden" id="crsf_token" value="f23e4cad299fdb654d6936f14fa77487"/>        <tr>
+          <td align="right">User Name:</td>
+          <td><input name="username" type="text" id="username" tabindex="21" size="8" />
+            <input type="submit" name="Submit3" value="SearchUser" tabindex="22" />
+            <input name="capture" type="hidden" id="capture" value="searchuser" /></td>
+        </tr>
+	  </form>
+      </table>
+    </div>
+  </div>
+  <div id="news">
+  	<MARQUEE scrollAmount=3 scrollDelay=150 behavior=alternate><p><font color="#0000ff"><strong>公告</strong></font>:&nbsp; <font style="background-color: rgb(255,255,255)" color="#000000"><font style="background-color: rgb(255,255,255)"><strong>支持Java，请使用Main类内含静态main方法</strong>。64位整数可以使用%I64d。</font></font></p>
+<p><font color="#339966"><strong>程序设计实践考试安排请询问教务干事老师，CSP成绩换算问题请询问王婷老师</strong></font></p>
+<p><strong><font color="#339966"><font color="#FF0000"><a href="/exam/index.php/solution/stat/cids/409,410,411,412,413,414,415,416,417,418,419,420,421,422,423,424,425,426,427,428,429,430">2023年C语言作业统计</a>  入队第一步，AK作业题，<a href="http://202.197.224.59/bm/">招新宣传点这 </a><a href="https://v.qq.com/x/page/v0812dpjirs.html">湘潭大学ACM/ICPC金牌团队</a></font></font></strong></p>
+<p>密码重置或新增账号，点<a href="https://www.wenjuan.com/s/QvQZfui/">这里</a>登记，管理员不定期操作</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong><font color="#339966"><font color="#FF0000"> </font></font></strong></p>
+<p>&nbsp;</p></MARQUEE>
+  </div>
+  <div class="hr"></div>
+<div id="content">
+  <div>
+  <table width="100%" border="0">
+  <tr align="center">
+    <td colspan="3"><h2>树</h2></td>
+  </tr>
+  <tr align="center">
+    <td colspan="3">[ <a href="/exam/index.php/solution/submit/id/1557/exam_id/465">Submit Code</a> ]
+    	[ <a href="/exam/index.php/solution/top20/pid/1557">Top 20 Runs</a> ]
+    	[ <a href="/exam/index.php/solution/onlinestatus/exam_id/465/problem_id/1557">Runs Status</a> ]
+    	</td>
+  </tr>
+  <tr align="center">
+    <td width="49%" align="right">Acceteped : 10 </td>
+    <td width="2%">&nbsp;</td>
+    <td width="49%" align="left"> Submit : 25 </td>
+  </tr>
+  <tr align="center">
+    <td align="right">Time Limit : 3000 MS</td>
+    <td>&nbsp;</td>
+    <td align="left">Memory Limit : 65536 KB</td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3"><h3>Description</h3></td>
+  </tr>
+  
+  <tr>
+    <td colspan="3"><div><article class="markdown-body"><h1 id="_1">树<a class="headerlink" href="#_1" title="Permanent link">#</a></h1>
+<h2 id="_2">题目描述<a class="headerlink" href="#_2" title="Permanent link">#</a></h2>
+<p>一个无向连通图<span class="arithmatex">\(G(V,E)\)</span>，你现在想得到这个图的一棵生成树<span class="arithmatex">\(T(V,E')\)</span>，去掉的边的最小代价和是多少？</p>
+<p>如图</p>
+<p><img src="data:image/jpeg;base64,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" /></p>
+<p>我们可以去掉边<span class="arithmatex">\((1,2),(3,4)\)</span>，得到一棵树，代价为<span class="arithmatex">\(4\)</span>。</p>
+<h2 id="_3">输入格式<a class="headerlink" href="#_3" title="Permanent link">#</a></h2>
+<p>第一行是一个整数<span class="arithmatex">\(T~(1 \le T \le 100)\)</span>，表示样例的个数。</p>
+<p>每个样例的第一行是两个整数<span class="arithmatex">\(n~(2 \le n \le 2000),m~(n-1 \le m \le min(20000,\frac{n(n-1)}{2}))\)</span>，分别表示顶点数与边数。
+以后的<span class="arithmatex">\(m\)</span>行，每行三个整数<span class="arithmatex">\(u,v~(1 \le u,v \le n),w~(1 \le w \le 1000)\)</span>，表示每条边的端点和边权。</p>
+<p>输入保证图是连通的，且任意两点之间没有重边。</p>
+<h2 id="_4">输出格式<a class="headerlink" href="#_4" title="Permanent link">#</a></h2>
+<p>每行输出一个样例的结果，为一个整数。</p>
+<h2 id="_5">样例输入<a class="headerlink" href="#_5" title="Permanent link">#</a></h2>
+<div class="highlight"><pre>2
+2 1
+1 2 1
+3 3
+1 2 1
+1 3 2
+2 3 3
+</pre></div>
+
+<h2 id="_6">样例输出<a class="headerlink" href="#_6" title="Permanent link">#</a></h2>
+<div class="highlight"><pre>0
+1
+</pre></div></article></div></td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3"><h3>Sample Input </h3></td>
+  </tr>
+  
+  <tr>
+    <td colspan="3"><pre></pre></td>
+  </tr>
+  
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3"><h3>Sample Output </h3></td>
+  </tr>
+  
+  <tr>
+    <td colspan="3"><pre></pre></td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3"><h3>Source</h3></td>
+  </tr>
+  <tr>
+    <td colspan="3"></td>
+  </tr>
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+		  <tr align="center">
+ 
+    <td colspan="3">[ <a href="/exam/index.php/solution/submit/id/1557/exam_id/465">Submit Code</a> ]
+    	[ <a href="/exam/index.php/solution/top20/pid/1557">Top 20 Runs</a> ]
+    	[ <a href="/exam/index.php/solution/onlinestatus/exam_id/465/problem_id/1557">Runs Status</a> ]
+    	</td>
+  </tr>
+</table>
+  </div>
+
+</div>
+  
+  <div class="hr"></div>
+  <div id="footer_menu">[ <a href="/exam/index.php">Home Page</a> ]&nbsp;&nbsp;[ <A HREF="javascript:self.location=document.referrer">Go Back</A> ]</div>
+  <div class="hr"></div>
+  <div id="footer">&copy;2008 XTU OnlineJudge Powered by XieBin, HuKun</div>
+</body>
+</html>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
