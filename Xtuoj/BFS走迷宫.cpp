@@ -38,3 +38,27 @@ int main(){
     }
     cout<<bfs(1,1);
 }
+
+
+
+//             int t1 = t*2, t2=t/2, t3=t+1, t4=t-1; 
+//             if(t1<100000 && !res[t1]){
+//                 res[t1]=1;
+//                 qq.push(t1);
+//             }
+//             if(!res[t2]){
+//                 res[t2]=1;
+//                 qq.push(t2);
+//             }
+//             if(!res[t3]){
+//                 res[t3]=1;
+//                 qq.push(t3);
+//             }
+//             if(t4>1 && !res[t4]){
+//                 res[t4]=1;
+//                 qq.push(t4);
+//             }
+//         }
+//         ans++;
+//     }
+// }

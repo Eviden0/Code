@@ -1,0 +1,1 @@
+{"name":"Local: 1433","url":"/usr/Code/Xtuoj/1433.cpp","tests":[{"id":1715095612881,"input":"2\n10 1\n123 2","output":"1\n5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/usr/Code/Xtuoj/1433.cpp","group":"local","local":true}

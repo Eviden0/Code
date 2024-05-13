@@ -38,18 +38,13 @@ long long q_pow(long long n){
     return ans.a[1][1];
 }
 int main() {
-    int t;
-    // cin>>t;
-    scanf("%d",&t);
+    int t;cin>>t;
     while(t--){
     int a,b;
-    // cin>>a>>b;
-    scanf("%d %d",&a,&b);
+    cin>>a>>b;
     int ans;
-    if(a)printf("%d\n",((q_pow(b-1)%mod*q_pow(b)%mod)%mod-(q_pow(a-2)%mod*q_pow(a-1)%mod)+mod)%mod);
-    // cout<<((q_pow(b-1)%mod*q_pow(b)%mod)%mod-(q_pow(a-2)%mod*q_pow(a-1)%mod)+mod)%mod<<endl;
-    else printf("%d\n",((q_pow(b-1)%mod*q_pow(b)%mod)+mod)%mod); 
-    // cout<<((q_pow(b-1)%mod*q_pow(b)%mod)+mod)%mod<<endl;
+    if(a)cout<<((q_pow(b-1)%mod*q_pow(b)%mod)%mod-(q_pow(a-2)%mod*q_pow(a-1)%mod)+mod)%mod<<endl;
+    else cout<<((q_pow(b-1)%mod*q_pow(b)%mod)+mod)%mod<<endl;
     //fib[n]->q_pow(n+1)
     // cout<<q_pow(n-1);
 
