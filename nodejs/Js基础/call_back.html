@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function loadData(callback) {
+    // 模拟网络请求
+    setTimeout(() => {
+        console.log("数据加载完成");
+        // 调用回调函数
+        callback();
+    }, 2000);
+}
+
+// 定义一个回调函数
+function handleData() {
+    console.log("处理数据...");
+}
+
+// 调用 loadData，并传递回调函数
+loadData(handleData);
+
+    </script>
+</body>
+</html>

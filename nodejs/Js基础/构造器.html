@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>该实例中,MyFunction 是函数构造函数</p>
+    <p id ="demo"></p>
+    <script>
+        function MyFunction(a1,a2){
+            return a1*a2
+        }
+        var x = MyFunction.call(MyFunction,12,12)
+        arr=[11,11]
+        alert(x+MyFunction.apply(MyFunction,arr));
+        // 两个方法都使用了对象本身作为第一个参数。 两者的区别在于第二个参数：
+        // apply传入的是一个参数数组，也就是将多个参数组合成为一个数组传入，而call则作为call的参数传入（从第二个参数开始）。
+        // document.getElementById("demo").innerHTML=x.firstName+" "+x.lastName;
+    // 未命名/匿名类
+let Runoob1 = class {
+  constructor(name, url) {
+    this.name = name;
+    this.url = url;
+  }
+};
+alert(Runoob1.name);
+// output: "Runoob"
+ 
+// 命名类
+let Runoob2 = class Runoob2 {
+  constructor(name, url) {
+    this.name = name;
+    this.url = url;
+  }
+};
+alert(Runoob2.name);
+// 输出: "Runoob2"
+    </script>
+</body>
+</html>

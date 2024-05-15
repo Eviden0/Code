@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+new Promise(function (resolve, reject) {
+    //resolve() 中可以放置一个参数用于向下一个 then 传递一个值，then 中的函数也可以返回一个值传递给 then。但是，如果 then 中返回的是一个 Promise 对象，那么下一个 then 将相当于对这个返回的 Promise 进行操作，这一点从刚才的计时器的例子中可以看出来。
+    // reject() 参数中一般会传递一个异常给之后的 catch 函数用于处理异常。
+    console.log(1111);
+    resolve(2222);
+}).then(function (value) {
+    console.log(value);
+    return 3333;
+}).then(function (value) {
+    console.log(value);
+    throw "An error";
+}).catch(function (err) {
+    console.log(err);
+});
+    </script>
+</body>
+</html>

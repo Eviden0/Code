@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>输入数字并点击开始验证!</p>
+    <input id="id1" type="number" min="100" required>
+    <button onclick="myFunction()">验证</button>
+    <p>如果输入的数字小于100,给出提示信息!</p>
+    <p id="demo"></p>
+    <script>
+        function myFunction(){
+            var txt=""
+            var input=document.getElementById("id1")
+            if(!isNumber(input.value)){
+                txt="this is not a number!"
+            }
+            else if(input.validity.rangeUnderflow){
+                txt="this num is to small!"
+            }else {
+                txt="you are right!"
+            }
+            document.getElementById("demo").innerHTML=txt
+        }
+        function isNumber(n){
+            return !isNaN(parseFloat(n))&&isFinite(n);
+        }
+
+    </script>
+</body>
+</html>
