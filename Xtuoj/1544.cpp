@@ -11,9 +11,4 @@ int main()
     pq.insert(pq.begin() + index, tar);
     for (int i = 0; i < pq.size(); i++)
         cout << pq[i] << " ";
-    int a = 1;
-    if (a > 1)
-    {
-        cout << "Hello world!";
-    }
 }
