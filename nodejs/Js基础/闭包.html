@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      在某种程度上，你可以将这个 add
+      函数看作是一个类的实例化工厂。通过立即执行函数返回的内部函数，我们可以创建多个实例，每个实例都会有自己的私有计数器。
+      类似于类的概念，这个内部函数可以被多次调用，每次调用都会创建一个新的实例，每个实例都有自己的状态（这里是
+      counter 变量）和行为（增加计数器的功能）。 但是，由于 JavaScript
+      并没有类的概念，而是通过函数和原型来实现对象和继承，所以严格意义上说，add
+      并不是一个类。它更像是一个函数式的闭包，用来生成具有相似行为的实例。
+    </p>
+    <button onclick="myFunc()">点击</button>
+    <p id="show"></p>
+    <script>
+      var add = (function () {
+        var counter = 0;
+        return function () {
+          return (counter += 1);
+        };
+      })();
+
+      function myFunc() {
+        // console.log(add());
+        document.getElementById("show").innerHTML = add();
+      }
+      //   myFunc();
+    </script>
+  </body>
+</html>

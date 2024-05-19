@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="d1">
+      <p>这是一个测试段落</p>
+      <p>这是另外一个测试段落</p>
+    </div>
+    <script>
+      var para = document.createElement("p");
+      var node = document.createTextNode("这是通过js创建的段落");
+      para.appendChild(node);
+      var element = document.getElementById("d1");
+      element.appendChild(para);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+{"name":"Local: 1544","url":"/usr/Code/Xtuoj/1544.cpp","tests":[{"id":1715993675369,"input":"push 1\npush 2\npop\npush 1\npush 3\npop","output":"1\n2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/usr/Code/Xtuoj/1544.cpp","group":"local","local":true}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function Animal(name) {
+        this.name = name;
+      }
+
+      Animal.prototype.eat = function () {
+        console.log(this.name + " is eating.");
+      };
+
+      function Dog(name, breed) {
+        Animal.call(this, name); //为啥是逗号分割开!
+        this.breed = breed;
+      }
+
+      // 建立原型链，让 Dog 继承 Animal
+      Dog.prototype = Object.create(Animal.prototype);
+      Dog.prototype.constructor = Dog;
+
+      Dog.prototype.bark = function () {
+        console.log(this.name + " is barking.");
+      };
+
+      var dog = new Dog("Buddy", "Labrador");
+      dog.eat(); // 调用从 Animal 继承的方法
+      dog.bark(); // 调用 Dog 的方法
+    </script>
+  </body>
+</html>

@@ -1,46 +1,38 @@
-#include <bits/stdc++.h>
+// #include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 using namespace std;
-// char a[4];
-string a;
+char a[4];
+// string a;
 vector<int> pq;
 int main()
 {
     // int n1=3;
-    pq[0] = 0;
-    while (cin >> a)
+    pq.push_back(0);
+    // int index = 0;
+    while (scanf("%s", a) != EOF)
     {
-        // scanf("%s",a)!=EOF
-        // scanf("%s",a);
-        // cin>>a;
-        // for(char i:a)cout<<i<<' ';
-        // pq[0]=1;
+        int index;
         if (a[1] == 'u')
         {
             int n;
             scanf("%d", &n);
-            // int index=lower_bound(pq.begin(),pq.end(),n)-pq.begin();
+            index = lower_bound(pq.begin(), pq.end(), n) - pq.begin();
 
             // cout<<index<<endl;
-            int index = 0;
 
             pq.insert(pq.begin() + index, n);
-            index++;
+            // index++;
         }
         else
         {
-            // cout<<pq[(pq.size()+1)/2]<<endl;
-            for (int i : pq)
-                cout << i << ' ';
+            // for (int i : pq)
+            //     cout << i << ' ';
+            // cout << endl;
+            int dl = (pq.size()) / 2;
+            // cout << pq[dl] << endl;
+            printf("%d\n", pq[dl]);
+            pq.erase(pq.begin() + dl);
         }
     }
-    // int t=3;
-    // while(t--){
-    //     string s;
-    //     cin>>s;
-    //     if(s[1]=='u'){
-    //         int n;cin>>n;
-    //         cout<<s<<' '<<n<<endl;
-    //     }
-    //     else cout<<s<<endl;
-    // }
 }
