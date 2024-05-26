@@ -1,71 +1,58 @@
 #include <bits/stdc++.h>
 using namespace std;
-priority_queue<long> left;
-priority_queue<long> right;
-char a[5];
+priority_queue<int> max_top;
+priority_queue<int, vector<int>, greater<int>> min_top;
+char s[6];
+
+void eval()
+{
+    if (max_top.size() - 1 > min_top.size())
+    {
+        // 重新平衡一下堆
+        min_top.push(max_top.top());
+        max_top.pop();
+    }
+    if (max_top.size() < min_top.size())
+    {
+        max_top.push(min_top.top());
+        min_top.pop();
+    }
+}
+void push(int tn)
+{
+
+    // 首先压入maxtop
+    // if (tn <= max_top.top() || max_top.empty()) // 第一次队列啥都没有,访问空会异常
+    if (max_top.empty() || tn < max_top.top())
+    {
+        max_top.push(tn);
+    }
+    else
+        min_top.push(tn);
+    eval();
+}
+
 int main()
 {
-    while (scanf("%s", a) != EOF)
+    while (scanf("%s", s) != EOF)
     {
-        if (a[1] == 'u')
+        /* code */
+        if (s[1] == 'u')
         {
-            // push 操作
+            int n;
+            scanf("%d", &n);
+            push(n);
         }
         else
         {
-            // pop操作
+            printf("%d\n", max_top.top());
+            max_top.pop();
+            // eval();
+            if (max_top.size() < min_top.size())
+            {
+                max_top.push(min_top.top());
+                min_top.pop();
+            }
         }
     }
 }
-
-#include <iostream>
-#include <vector>
-#include <queue>
-using namespace std;
-priority_queue<int> min_head;                            // 存小的
-priority_queue<int, vector<int>, greater<int>> max_head; // 存大的
-void push(int t)
-{
-    if (min_head.empty() || t <= min_head.top())
-    {
-        min_head.push(t);
-    }
-    else
-    {
-        max_head.push(t);
-    }
-    if (min_head.size() > max_head.size() + 1)
-    {
-        max_head.push(min_head.top());
-        min_head.pop();
-    }
-    else if (min_head.size() < max_head.size())
-    {
-        min_head.push(max_head.top());
-        max_head.pop();
-    }
-}
-// int main()
-// {
-//     char a[10];
-//     int n;
-//     while(scanf("%s",a)!=EOF)
-//     {
-//          if(a[1]=='u')
-//          {
-//              scanf("%d",&n);
-//              push(n);
-//         }
-//         else if(a[1]=='o')
-//         {
-//             printf("%d\n",min_head.top());
-//             min_head.pop();
-//             if(min_head.size()<max_head.size())
-//             {
-//                 min_head.push(max_head.top());
-//                 max_head.pop();
-//             }
-//         }
-//     }
-//     return 0;
-// }
