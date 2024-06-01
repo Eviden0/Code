@@ -1,0 +1,1 @@
+{"name":"Local: Lisa's Puzzle","url":"/usr/Code/算法数据结构补充/Lisa's Puzzle.cpp","tests":[{"id":1716772560946,"input":"5\n5\n13\n1\n2\n3","output":"1\n0\n3\n0\n0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/usr/Code/算法数据结构补充/Lisa's Puzzle.cpp","group":"local","local":true}

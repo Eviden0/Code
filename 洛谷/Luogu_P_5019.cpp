@@ -2,12 +2,19 @@
 using namespace std;
 int main()
 {
-    // 4 3 2 5 3 5
-    // 3 2 1 4 2 4
-    // 2 1 0 3 1 3
+    // f[i]
+    // 4 0 0 3 0 2
 
     int n;
+    cin >> n;
     int a[100005] = {0};
     for (int i = 0; i < n; i++)
         cin >> a[i];
+    long long ans = a[0];
+    for (int i = 1; i < n; i++)
+    {
+        if (a[i] > a[i - 1])
+            ans += a[i] - a[i - 1];
+    }
+    cout << ans;
 }

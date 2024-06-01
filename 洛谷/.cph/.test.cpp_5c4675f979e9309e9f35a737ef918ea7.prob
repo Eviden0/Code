@@ -1,0 +1,1 @@
+{"name":"Local: test","url":"/usr/Code/洛谷/test.cpp","tests":[{"id":1716883059751,"input":"1\n4\n1 2 3\n2 4 0\n5 0 0\n4 0 0\n4\n2 2 0\n2 3 4\n3 0 0\n1 0 0","output":"3 4 7 1 5\n7 4 1 3 5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/usr/Code/洛谷/test.cpp","group":"local","local":true}

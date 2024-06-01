@@ -1,27 +1,34 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
+
 using namespace std;
-int n,m,a[8],s=0;
-void dfs(int k)//分第k份 
+int n;
+vector<int> arr;
+unordered_map<int, bool> vis;
+void dfs(int x)
 {
-	if(n==0)return ;
-	if(k==m)
+	if (arr.size() == n)
 	{
-		if(n>=a[k-1])s++;
-		return;
+		for (int i : arr)
+			cout << i << ' ';
+		cout << endl;
 	}
-	for(int i=a[k-1];i<=n/(m-k+1);i++)//第k份的上下界 
+	for (int i = 1; i <= n; i++)
 	{
-		a[k]=i;//第k份的值 
-		n-=i;
-		dfs(k+1);
-		n+=i;
+		if (vis[i])
+			continue;
+		vis[i] = true;
+		arr.push_back(i);
+		dfs(i);
+		vis[i] = false;
+		arr.erase(arr.end() - 1);
 	}
 }
+
 int main()
 {
-	cin>>n>>m;
-	a[0]=1;//初始条件 
+
+	// 输出1-n的全排列
+
+	cin >> n;
 	dfs(1);
-	cout<<s<<endl;
-	return 0;
 }
