@@ -1,0 +1,1 @@
+{"name":"Local: 1580","url":"/usr/Code/Xtuoj/1580.cpp","tests":[{"id":1717591348790,"input":"4 4 2\n1 2 1\n2 3 2\n2 4 3\n3 4 2\n1 4","output":"0 1 2 0"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/usr/Code/Xtuoj/1580.cpp","group":"local","local":true}
