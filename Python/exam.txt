@@ -1,0 +1,220 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+Welcome to XTU OnlineJudge</title>
+<link rel='stylesheet' type='text/css' href='/exam/Web/Tpl/default/Public/Css/style_user.css' />
+<link rel="stylesheet" href="/markdown.css" type="text/css" />
+<link rel="stylesheet" href="/md_back.css" type="text/css" />
+    
+  <script>
+MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  },
+  svg: {
+    fontCache: 'global'
+  }
+};
+</script>
+  <script type="text/javascript" src="/mathjax/es5/tex-mml-chtml.js"></script>
+  	
+</head>
+<body>
+
+  <div id="header"> 
+    <div id="xtu_logo"><img src="/exam/Web/Tpl/default/Public/Images/xtu_logo.jpg" alt="XiangTan University" /></div>
+    <div id="xtu">XiangTan&nbsp;&nbsp;University<br />
+    OnlineJudge&nbsp;&nbsp;For&nbsp;&nbsp;C/C++ Programming</div>
+    <div id="acm_logo"><img src="/exam/Web/Tpl/default/Public/Images/acm_small.jpg" alt="ACM/ICPC" /></div>
+  </div>
+  <div class="hr"></div>
+  <div id="menu">
+  	<div>
+    <table width="100%" border="0">
+      <tr class="menu_title">
+        <td><a href="/exam/index.php">Home Page</a></td>     
+        <td>Current Exams</td>
+        <td><a href="/exam/index.php/exam/past">Past Exams</a></td>
+        <td>Scheduled Exams</td>
+        <td><a href="/exam/index.php/user/ranklist">User Ranklist</a></td>       
+      </tr>
+    </table>
+	</div>
+	<div class="hr"></div>
+    <div id="menu_left">
+		  
+	<table width="100%" border="0">
+	  <form action="" method="post" name="login">
+        <tr>
+          <td>&nbsp;&nbsp;StudentID:</td>
+          <td><input name="username" type="text" id="username" tabindex="1" size="8" />
+          <input name="capture" type="hidden" id="capture" value="login" /></td>
+          <td>&nbsp;&nbsp;<a href="/exam/index.php/user/register">Create New Account </a></td>
+        </tr>
+        <tr>
+          <td>&nbsp;&nbsp;Password:</td>
+          <td><input name="password" type="password" id="password" tabindex="2" size="8" />
+          <input type="submit" name="Submit" value="Login" tabindex="3" /></td>
+          <td>&nbsp;&nbsp;<a href="/exam/index.php/user/remind">Forgot Your Password or Username</a></td>
+        </tr>
+	  </form>
+      </table>    </div>
+    <div id="menu_right">
+      <table width="100%" border="0">
+	  <form action="" method="post" name="gotoproblem">
+        <tr>
+          <td align="right">ProblemID:</td>
+          <td><input name="problem_id" type="text" id="problem_id" tabindex="11" size="8" />
+            <input type="submit" name="Submit2" value="Go Problem" tabindex="12" />
+            <input name="capture" type="hidden" id="capture" value="goproblem" /></td>
+        </tr>
+	  </form>
+	  <form action="" method="post" name="searchuser">
+        <tr>
+          <td align="right">User Name:</td>
+          <td><input name="username" type="text" id="username" tabindex="21" size="8" />
+            <input type="submit" name="Submit3" value="SearchUser" tabindex="22" />
+            <input name="capture" type="hidden" id="capture" value="searchuser" /></td>
+        </tr>
+	  </form>
+      </table>
+    </div>
+  </div>
+  <div id="news">
+  	<MARQUEE scrollAmount=3 scrollDelay=150 behavior=alternate><p><font color="#0000ff"><strong>公告</strong></font>:<font color="#ff0000"><strong>可以使用Java，使用Main类，里面含main方法。</strong></font></p>
+<p><font color="#ff0000"><strong>64位整数C风格输入输出有符号使用%I64d，无符号使用%I64u</strong></font></p>
+<p><font color="#ff0000"><strong>请使用考生号作为用户名和密码登录系统，<a href="http://172.22.112.248/exam/faq.html">FAQ点这里</a><br />
+</strong></font></p>
+<p><strong><font color="#ff0000">登录以后不要关闭浏览器或登出，否则需要本人带证件去401服务器机房找管理人员刷新登录状态</font></strong></p>
+<p><strong><font color="#ff0000">恶意提交无效代码攻击服务器的同学会被取消考试资格！！！</font></strong></p>
+<p><strong><font color="#ff0000">考试结束后会对代码进行雷同判断，一题被判雷同成绩视为不及格！！！</font></strong></p>
+<p><strong><font color="#3366ff">请使用Firefox或者Chrome浏览器</font></strong></p>
+<p>&nbsp;</p></MARQUEE>
+  </div>
+  <div class="hr"></div>
+  <div id="content">
+  <div>
+<table width="95%" border="0" align="center">
+  <tr class="menu_title">
+    <td>Exam ID </td>
+    <td>Exam Title </td>
+    <td>Start Time </td>
+    <td>End time </td>
+  </tr>
+  <tr align="center">
+    <td>218&nbsp;</td>
+    <td><a href="/exam/index.php/exam/problems/exam_id/218">2024上学期《程序设计实践》第二次考试 </a>&nbsp;</td>
+    <td>2024-05-31 14:30:00&nbsp;</td>
+    <td>2024-05-31 17:30:00&nbsp;</td>
+  </tr><tr align="center">
+    <td>217&nbsp;</td>
+    <td><a href="/exam/index.php/exam/problems/exam_id/217">2024上学期《程序设计实践》第一次考试    </a>&nbsp;</td>
+    <td>2024-05-24 14:30:00&nbsp;</td>
+    <td>2024-05-24 17:30:00&nbsp;</td>
+  </tr><tr align="center">
+    <td>216&nbsp;</td>
+    <td><a href="/exam/index.php/exam/problems/exam_id/216">2024年上学期C语言程序设计重考重修</a>&nbsp;</td>
+    <td>2024-02-26 14:30:00&nbsp;</td>
+    <td>2024-02-26 17:30:00&nbsp;</td>
+  </tr><tr align="center">
+    <td>215&nbsp;</td>
+    <td><a href="/exam/index.php/exam/problems/exam_id/215">2024年上学期程序设计实践重考重修</a>&nbsp;</td>
+    <td>2024-02-26 08:30:00&nbsp;</td>
+    <td>2024-02-26 11:30:00&nbsp;</td>
+  </tr><tr align="center">
+    <td>214&nbsp;</td>
+    <td><a href="/exam/index.php/exam/problems/exam_id/214">2023年下学期《C语言》期末考试  </a>&nbsp;</td>
+    <td>2024-01-15 08:30:00&nbsp;</td>
+    <td>2024-01-15 11:35:00&nbsp;</td>
+  </tr><tr align="center">
+    <td>213&nbsp;</td>
+    <td><a href="/exam/index.php/exam/problems/exam_id/213">2023年下学期《C语言》模拟测试-2  </a>&nbsp;</td>
+    <td>2023-12-29 14:00:00&nbsp;</td>
+    <td>2023-12-29 17:00:00&nbsp;</td>
+  </tr><tr align="center">
+    <td>212&nbsp;</td>
+    <td><a href="/exam/index.php/exam/problems/exam_id/212">2023年下学期程序设计实践重修 </a>&nbsp;</td>
+    <td>2023-12-26 14:30:00&nbsp;</td>
+    <td>2023-12-26 17:30:00&nbsp;</td>
+  </tr><tr align="center">
+    <td>211&nbsp;</td>
+    <td><a href="/exam/index.php/exam/problems/exam_id/211">2023年下学期《C语言》模拟测试-1 (23软件工程)</a>&nbsp;</td>
+    <td>2023-12-08 10:15:00&nbsp;</td>
+    <td>2023-12-08 12:15:00&nbsp;</td>
+  </tr><tr align="center">
+    <td>210&nbsp;</td>
+    <td><a href="/exam/index.php/exam/problems/exam_id/210">2023年下学期《C语言》模拟测试-1 (23网络安全1，2班) </a>&nbsp;</td>
+    <td>2023-12-07 14:00:00&nbsp;</td>
+    <td>2023-12-07 16:00:00&nbsp;</td>
+  </tr><tr align="center">
+    <td>209&nbsp;</td>
+    <td><a href="/exam/index.php/exam/problems/exam_id/209">2023年下学期《C语言》模拟测试-1 (23网络安全3，4班) </a>&nbsp;</td>
+    <td>2023-12-07 10:00:00&nbsp;</td>
+    <td>2023-12-07 12:00:00&nbsp;</td>
+  </tr><tr align="center">
+    <td>208&nbsp;</td>
+    <td><a href="/exam/index.php/exam/problems/exam_id/208">2023年下学期程序设计实践重考重修</a>&nbsp;</td>
+    <td>2023-09-07 14:30:00&nbsp;</td>
+    <td>2023-09-07 17:30:00&nbsp;</td>
+  </tr><tr align="center">
+    <td>207&nbsp;</td>
+    <td><a href="/exam/index.php/exam/problems/exam_id/207">2023年上学期程序设计实践期末考试       </a>&nbsp;</td>
+    <td>2023-05-31 08:30:00&nbsp;</td>
+    <td>2023-05-31 11:30:00&nbsp;</td>
+  </tr><tr align="center">
+    <td>206&nbsp;</td>
+    <td><a href="/exam/index.php/exam/problems/exam_id/206">2023年上学期程序设计实践-第二次考试</a>&nbsp;</td>
+    <td>2023-05-10 08:30:00&nbsp;</td>
+    <td>2023-05-10 11:30:00&nbsp;</td>
+  </tr><tr align="center">
+    <td>205&nbsp;</td>
+    <td><a href="/exam/index.php/exam/problems/exam_id/205">2023年上学期程序设计实践-第一次考试</a>&nbsp;</td>
+    <td>2023-04-19 08:30:00&nbsp;</td>
+    <td>2023-04-19 11:30:00&nbsp;</td>
+  </tr><tr align="center">
+    <td>204&nbsp;</td>
+    <td><a href="/exam/index.php/exam/problems/exam_id/204">2023年上学期C语言程序设计重考重修</a>&nbsp;</td>
+    <td>2023-04-01 19:00:00&nbsp;</td>
+    <td>2023-04-01 22:00:00&nbsp;</td>
+  </tr><tr align="center">
+    <td>203&nbsp;</td>
+    <td><a href="/exam/index.php/exam/problems/exam_id/203">2023年上学期程序设计实践重考重修</a>&nbsp;</td>
+    <td>2023-03-31 19:00:00&nbsp;</td>
+    <td>2023-03-31 22:00:00&nbsp;</td>
+  </tr><tr align="center">
+    <td>202&nbsp;</td>
+    <td><a href="/exam/index.php/exam/problems/exam_id/202">2022年程序设计实践缓考2</a>&nbsp;</td>
+    <td>2023-03-15 18:32:00&nbsp;</td>
+    <td>2023-03-15 21:32:00&nbsp;</td>
+  </tr><tr align="center">
+    <td>201&nbsp;</td>
+    <td><a href="/exam/index.php/exam/problems/exam_id/201">2022年下学期C语言程序设计期末缓考 </a>&nbsp;</td>
+    <td>2023-02-15 19:00:00&nbsp;</td>
+    <td>2023-02-15 22:00:00&nbsp;</td>
+  </tr><tr align="center">
+    <td>200&nbsp;</td>
+    <td><a href="/exam/index.php/exam/problems/exam_id/200">2022年下学期兴湘C语言期末考试</a>&nbsp;</td>
+    <td>2023-02-16 10:30:00&nbsp;</td>
+    <td>2023-02-16 12:30:00&nbsp;</td>
+  </tr><tr align="center">
+    <td>199&nbsp;</td>
+    <td><a href="/exam/index.php/exam/problems/exam_id/199">2022年下学期C语言程序设计期末考试  </a>&nbsp;</td>
+    <td>2023-01-06 14:00:00&nbsp;</td>
+    <td>2023-01-06 17:00:00&nbsp;</td>
+  </tr>  <tr class="page_link">
+    <td colspan="4"><div align="right">共204 条记录/11页  [<a href='/exam/index.php/exam/past?&p=2'>下一页</a>]    [1]&nbsp;<a href='/exam/index.php/exam/past?&p=2'>&nbsp;2&nbsp;</a>&nbsp;<a href='/exam/index.php/exam/past?&p=3'>&nbsp;3&nbsp;</a>&nbsp;<a href='/exam/index.php/exam/past?&p=4'>&nbsp;4&nbsp;</a>&nbsp;<a href='/exam/index.php/exam/past?&p=5'>&nbsp;5&nbsp;</a> [<a href='/exam/index.php/exam/past?&p=6' >下5页</a>] [<a href='/exam/index.php/exam/past?&p=11' >最后一页</a>]</div></td>
+  </tr>
+</table>  
+  </div>
+
+  </div>
+  
+  <div class="hr"></div>
+  <div id="footer_menu">[ <a href="/exam/index.php">Home Page</a> ]&nbsp;&nbsp;[ <A HREF="javascript:history.back(-1)">Go Back</A> ]</div>
+  <div class="hr"></div>
+  <div id="footer">&copy;2008 XTU OnlineJudge Powered by XieBin, HuKun</div>
+</body>
+</html>

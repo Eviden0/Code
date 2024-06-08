@@ -1,0 +1,1 @@
+{"name":"Local: 第一次考试重量","url":"/usr/Code/Xtuoj/第一次考试重量.cpp","tests":[{"id":1717832447395,"input":"3\n3\n1 2 4\n\n3\n1 1 1\n\n3\n2 2 2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/usr/Code/Xtuoj/第一次考试重量.cpp","group":"local","local":true}
